@@ -1,0 +1,33 @@
+package com.BasicPractice;
+
+import java.util.Scanner;
+
+import com.sun.management.OperatingSystemMXBean;
+
+public class Assignments {
+	public static void main(String[] args) {
+		System.out.println(" 10 MCQ Question :");
+		Scanner m = new Scanner (System.in);
+		System.out.println(" Enter your name");
+		String name = m.next();
+		System.out.println("Enter score between 1 to 10 ");
+        int s = m.nextInt();
+        if (s>=7)
+        {
+        	System.out.println("hi" +name+" you are eligible for java");
+        }
+        else if (s<=7)
+        {
+        	System.out.println("Hi" +name+"you are eligible for c++");
+        }
+        else if (s <5)
+        {
+        	System.out.println("Please retake the exam");
+        }
+        else
+        {
+        	System.out.println("Please reenter the number");
+        }
+	}
+
+}
