@@ -1,0 +1,61 @@
+package com.BasicPractice;
+
+import java.util.Scanner;
+
+class A
+{
+	A(){
+		Scanner o = new Scanner (System.in);
+		System.out.println("Enter your name");
+		String name = o.next();
+		System.out.println("Enter English marks");
+		int e= o.nextInt();
+		System.out.println("Enter Marathi marks");
+		int m = o.nextInt();
+		System.out.println("Enter Hindi marks");
+		int h = o.nextInt();
+		System.out.println("Enter Maths marks");
+		int ms = o.nextInt();
+		System.out.println("Enter Science marks");
+		int s = o.nextInt();
+		System.out.println("Enter History marks");
+		int hs = o.nextInt();
+		System.out.println("Enter Geography marks");
+		int g = o.nextInt();
+		int total = e+m+h+ms+s+hs+g;
+	    int result = total/7;
+	    System.out.println("your result is "+result+"%");
+	    if (result>=75)
+	    {
+	    	System.out.println("Hi"+name+"you have scored" +total+ "you got distinction");
+	    }
+	    else if (result <75 && result>65 )
+	    {
+	    	System.out.println("Hi"+name+"you have scored" +total+ "you got first class");
+	    }
+	    else if (result <65 && result > 55)
+	    {
+	    	System.out.println("Hi"+name+"you have scored" +total+ "you got second class");
+	    }
+	    else if (result >35 && result <55)
+	    {
+	    	System.out.println("Hi"+name+"you have scored" +total+ "you are pass");
+	   
+	    }
+	    else 
+	    {
+	    	System.out.println(" Sorry!! Your are failed");
+	    }
+	    	
+		
+	}
+}
+
+
+public class marks {
+	public static void main(String[] args) {
+		A a =new A ();
+	}
+	
+
+}
