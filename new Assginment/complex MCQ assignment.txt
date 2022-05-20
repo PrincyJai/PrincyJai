@@ -1,0 +1,86 @@
+package com.BasicPractice;
+
+import java.util.Scanner;
+
+class B 
+{
+	B ()
+	{
+		
+		Scanner n = new Scanner (System.in);
+		System.out.println(" Please enter your name");
+		String name = n.next();
+		
+		String answer1="";
+		int question = 4;
+		Scanner scan = new Scanner (System.in);
+		System.out.println(" 10 MCQ questions are below:");
+		System.out.println(" 1. Which one of the following is not true?");
+		System.out.println("a.A class containing abstract methods is called an abstract class.");
+		System.out.println("b.Abstract methods should be implemented in the derived class.");
+		System.out.println("c.An abstract class cannot have non-abstract methods.");
+		System.out.println("d.A class must be qualified as ‘abstract’ class, if it contains one abstract method.");
+ answer1 = scan.nextLine();
+ if (answer1.equals("c"))
+ {
+	 System.out.println("Your answer is correct");
+ }
+ else {
+	 System.out.println("The answer is c");
+ }
+	 String answer2="";
+		Scanner scan1 = new Scanner (System.in);
+		System.out.println(" 2. Which of the following is true?");
+		System.out.println("a.A finally block is executed before the catch block but after the try block.");
+		System.out.println("b.A finally block is executed, only after the catch block is executed.");
+		System.out.println("c.A finally block is executed whether an exception is thrown or not.");
+		System.out.println("d. A finally block is executed, only if an exception occurs.");
+answer2 = scan1.nextLine();
+if (answer2.equals("c"))
+{
+	 System.out.println("Your answer is correct");
+}
+else {
+	 System.out.println("The answer is c");
+ }
+String answer3="";
+Scanner scan2 = new Scanner (System.in);
+System.out.println(" 3.  Among these expressions, which is(are) of type String?");
+System.out.println("a. “0” ");
+System.out.println("b.“ab” + “cd”");
+System.out.println("c. ‘0’");
+System.out.println("d. Both (A) and (B) above (e) (A), (B) and (C) above");
+answer3 = scan2.nextLine();
+if (answer3.equals("d"))
+{
+System.out.println("Your answer is correct");
+}
+else {
+System.out.println("The answer is d");
+}
+String answer4="";
+Scanner scan3 = new Scanner (System.in);
+System.out.println(" 4.  A constructor");
+System.out.println("1. Must have the same name as the class it is declared within");
+System.out.println("2.Is used to create objects.");
+System.out.println("3. May be declared private");
+System.out.println("4.  (a), (b) and (c) above.");
+answer4 = scan3.nextLine();
+if (answer4.equals("d"))
+{
+System.out.println("Your answer is correct");
+}
+else {
+System.out.println("The answer is d");
+} 
+
+	}
+	}
+
+public class Complexassignments {
+	public static void main(String[] args) {
+		B b = new B();
+	}
+		
+
+}
